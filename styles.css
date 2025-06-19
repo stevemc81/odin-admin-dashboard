@@ -10,6 +10,8 @@ body {
     grid-template-rows: 1fr 4fr;
 }
 
+/* Sidebar */
+
 .sidebar {
     color: white;
     background-color: #3092D4;
@@ -28,6 +30,7 @@ body {
 
 .branding h2 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .dashboard-icon {
@@ -35,9 +38,34 @@ body {
     height: 48px;
 }
 
-.dashboard-icon svg path {
+.dashboard-icon svg path,
+.nav-icon svg path {
     fill: white;
 }
+
+.main-nav,
+.secondary-nav {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.main-nav a,
+.secondary-nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Header */
 
 .header {
     padding: 16px;
